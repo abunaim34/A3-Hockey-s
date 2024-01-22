@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +42,7 @@
 </head>
 <body class="font-manrope">
     <!-- header -->
-    <header class="lg:mx-32">
+    <header class="lg:mx-32 px-3">
         <!-- navber -->
         <div class="navbar bg-base-100 py-12">
             <div class="navbar-start">
@@ -58,7 +58,7 @@
                   <li><a>Contact</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold ">Hockey’s</a>
+              <a class="text-2xl lg:text-4xl font-extrabold ">Hockey’s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1 text-[#424247]">
@@ -70,8 +70,45 @@
               </ul>
             </div>
             <div class="navbar-end ">
-                <i class="fa-solid hidden fa-magnifying-glass lg:pr-6 text-[#424247]"></i>
-              <a class="btn bg-primary-color text-white">Get Ticket</a>
+              <div class="hidden lg:block lg:pr-6">
+                <img src="./Images/Frame (1).svg" alt="">
+              </div>
+              <a class="btn bg-primary-color text-white font-bold">Get Ticket</a>
+            </div>
+          </div>
+
+          <!-- carousel -->
+          <div class="mb-24 relative">
+            <div class="carousel w-full ">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./Images/1.png" class="w-full " />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle border-0 bg-black text-white">❮</a> 
+                    <a href="#slide2" class="btn btn-circle border-0 bg-black text-white">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle border-0 bg-black text-white">❮</a> 
+                    <a href="#slide3" class="btn btn-circle border-0 bg-black text-white">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle border-0 bg-black text-white">❮</a> 
+                    <a href="#slide1" class="btn btn-circle border-0 bg-black text-white">❯</a>
+                  </div>
+                </div> 
+            </div>
+    
+            <!-- meet heros -->
+            <div class="lg:w-[500px] rounded-2xl bg-black lg:absolute right-8  bottom-8">
+                <div class="p-7">
+                    <h3 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="font-medium text-[#FFFFFF99]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
             </div>
           </div>
     </header>
